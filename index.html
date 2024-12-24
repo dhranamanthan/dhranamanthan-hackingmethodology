@@ -1,0 +1,2398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            margin: 10px 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #f5f5f5;
+        }
+
+        .tab:hover,
+        .tab.active {
+            background: #007BFF;
+            color: white;
+        }
+
+        .content {
+            display: none;
+        }
+
+        .content.active {
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table th,
+        table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #f5f5f5;
+        }
+
+        .dropdown {
+            margin: 20px 0;
+        }
+
+        select {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        @media (max-width: 768px) {
+            .tabs {
+                flex-wrap: wrap;
+            }
+
+            .tab {
+                flex: 1 1 calc(50% - 20px);
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Information Hub</h1>
+    </header>
+    <div class="container">
+        <!-- Tabs -->
+        <div class="tabs">
+            <div class="tab active" data-tab="Info-gathering">Information Gathering</div>
+            <div class="tab" data-tab="extensions">Extensions</div>
+            <div class="tab" data-tab="photo-metadata-viewer">photo-metadata-viewer</div>
+            <div class="tab" data-tab="Info-IP">IP address Info</div>
+            <div class="tab" data-tab="Search-Engine">Search-Engine</div>
+            <div class="tab" data-tab="All-In-One-Tools">All In One Tools</div>
+            <div class="tab" data-tab="Encode-Decode-Encryption-Decryption">Enc-Dec and Encry-Decry</div>
+            <div class="tab" data-tab="Dorks">Dorks</div>
+            <div class="tab" data-tab="online-subdomain-wordlists">online subdomain and wordlists</div>
+            <div class="tab" data-tab="reverse-shell-cve">Reverse Shell and exploits CVE</div>
+            <div class="tab" data-tab="web-vulnerabilities-report">web-vulnerabilities-report + poc</div>
+            <div class="tab" data-tab="mobile-email-info">mobile-email-info</div>
+            <div class="tab" data-tab="youtube-playlist-downloader">youtube-playlist-downloader</div>
+            <div class="tab" data-tab="Web-Security-Vulnerabilities-exploit-automated-tools">Web Vulnerabilities{exploit} + cheat sheet + automated tools</div>
+                <div class="tab" data-tab="bookmarks">Learning + Labs</div>
+        </div>
+
+        <!-- Content -->
+        <div class="content" id="extensions">
+            <h2>Extensions</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cookie-Editor</td>
+                        <td>Manage cookies easily</td>
+                    </tr>
+                    <tr>
+                        <td>FoxyProxy Basic</td>
+                        <td>Manage proxies efficiently</td>
+                    </tr>
+                    <tr>
+                        <td>Email Finder by Anymailfinder</td>
+                        <td>Find Email</td>
+                    </tr>
+                    <tr>
+                        <td>Free VPN for Chrome - VPN Proxy VeePN</td>
+                        <td>Enabling vpn</td>
+                    </tr>
+                    <tr>
+                        <td>Free VPN Proxy - VPNLY</td>
+                        <td>Enabling VPNLY</td>
+                    </tr>
+                    <tr>
+                        <td>Google Docs Offline</td>
+                        <td>Google Document Offline</td>
+                    </tr>
+                    <tr>
+                        <td>Link Gopher</td>
+                        <td>Extract Links</td>
+                    </tr>
+                    <tr>
+                        <td>Link Grabber</td>
+                        <td>Extract Links</td>
+                    </tr>
+                    <tr>
+                        <td>MultiLogin</td>
+                        <td>Enabler Multilogin System</td>
+                    </tr>
+                    <tr>
+                        <td>Open Multiple URLs</td>
+                        <td>open multiple URLs</td>
+                    </tr>
+                    <tr>
+                        <td>Screen Recorder</td>
+                        <td>Screen recording</td>
+                    </tr>
+                    <tr>
+                        <td>Session Share</td>
+                        <td>Session hijacking through sessions</td>
+                    </tr>
+                    <tr>
+                        <td>SessionBox - Multi login to any website</td>
+                        <td>Enabler Multilogin</td>
+                    </tr>
+                    <tr>
+                        <td>Shodan</td>
+                        <td>Shodan Extensions</td>
+                    </tr>
+                    <tr>
+                        <td>Wappalyzer - Technology profiler</td>
+                        <td>Tech detect tools</td>
+                    </tr>
+                    <tr>
+                        <td>WebToolHub</td>
+                        <td>All In one extensions</td>
+                    </tr>
+                    <tr>
+                        <td>SignalHire - find email or phone number</td>
+                        <td>Find Email and Phone number</td>
+                    </tr>
+                    <tr>
+                        <td>Search by Image</td>
+                        <td>Search Using Image</td>
+                    </tr>
+                    <tr>
+                        <td>Hackbar</td>
+                        <td>All Payload Containing Tools</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="content" id="bookmarks">
+            <h2>Learning + Labs</h2>
+            <table>
+                <tbody>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Resource Name</th>
+                                <th>Link</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Learning + Labs</td>
+                                <td><a href="https://www.portswigger.net/" target="_blank">Portswigger</a></td>
+                            </tr>
+                            <tr>
+                                <td>Kontra</td>
+                                <td><a href="https://application.security/" target="_blank">Kontra</a></td>
+                            </tr>
+                            <tr>
+                                <td>TryHackMe</td>
+                                <td><a href="https://tryhackme.com/" target="_blank">TryHackMe</a></td>
+                            </tr>
+                            <tr>
+                                <td>Hack The Box</td>
+                                <td><a href="https://www.hackthebox.com/" target="_blank">Hack The Box</a></td>
+                            </tr>
+                            <tr>
+                                <td>Vulnerability Lab</td>
+                                <td><a href="https://www.vulnerability-lab.com/" target="_blank">Vulnerability Lab</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>TryHackMe Linux Prives</td>
+                                <td><a href="https://www.aldeid.com/wiki/TryHackMe-Common-Linux-Prives"
+                                        target="_blank">TryHackMe Linux Prives</a></td>
+                            </tr>
+                            <tr>
+                                <td>CompTIA Security Labs</td>
+                                <td><a href="https://www.101labs.net/comptia-security/" target="_blank">CompTIA Security
+                                        Labs</a></td>
+                            </tr>
+                            <tr>
+                                <td>Vulsee Dictionary of Pentesting</td>
+                                <td><a href="https://paper.vulsee.com/Dictionary-Of-Pentesting/" target="_blank">Vulsee
+                                        Dictionary</a></td>
+                            </tr>
+                            <tr>
+                                <td>PicoCTF</td>
+                                <td><a href="https://play.picoctf.org/account" target="_blank">PicoCTF</a></td>
+                            </tr>
+                            <tr>
+                                <td>PEASS-ng linPEAS</td>
+                                <td><a href="https://github.com/peass-ng/PEASS-ng/tree/master/linPEAS"
+                                        target="_blank">PEASS-ng linPEAS</a></td>
+                            </tr>
+                            <tr>
+                                <td>Ringzer0 CTF</td>
+                                <td><a href="https://ringzer0ctf.com/" target="_blank">Ringzer0 CTF</a></td>
+                            </tr>
+                            <tr>
+                                <td>LearnVern Ethical Hacking Course</td>
+                                <td><a href="https://www.learnvern.com/ethical-hacking-course" target="_blank">LearnVern
+                                        Ethical Hacking Course</a></td>
+                            </tr>
+                            <tr>
+                                <td>All In One Github</td>
+                                <td><a href="https://github.com/edoardottt/awesome-hacker-search-engines?tab=readme-ov-file"
+                                        target="_blank">Github All in one</a></td>
+                            </tr>
+                            <tr>
+                                <td>Google Drive Folder</td>
+                                <td><a href="https://drive.google.com/drive/folders/16uVxEFkZ4CUhQ6HAQYnHiv1g7vUtZ4Cf"
+                                        target="_blank">Google Drive Folder</a></td>
+                            </tr>
+                            <tr>
+                                <td>Burp Suite Logger Secrets for Pentesters</td>
+                                <td><a href="https://blog.certcube.com/burpsuite-logger-secrets-for-pentesters/"
+                                        target="_blank">Burp Suite Logger Secrets</a></td>
+                            </tr>
+                            <tr>
+                                <td>Lira Hacking Docs</td>
+                                <td><a href="https://lira.epac.to/DOCS-TECH/Hacking/" target="_blank">Lira Hacking
+                                        Docs</a></td>
+                            </tr>
+                            <tr>
+                                <td>Industry Academy Community</td>
+                                <td><a href="https://www.industryacademiacommunity.com/t/u/community-chat"
+                                        target="_blank">Industry Academy</a></td>
+                            </tr>
+                            <tr>
+                                <td>HowToHunt</td>
+                                <td><a href="https://github.com/KathanP19/HowToHunt/" target="_blank">HowToHunt</a></td>
+                            </tr>
+                            <tr>
+                                <td>Gophish Setup Guide</td>
+                                <td><a href="https://www.hackercoolmagazine.com/gophish-setup-a-phishing-campaign/"
+                                        target="_blank">Gophish Setup</a></td>
+                            </tr>
+                            <tr>
+                                <td>KITUR</td>
+                                <td><a href="https://github.com/KITURRULES/kitur/" target="_blank">KITUR</a></td>
+                            </tr>
+                            <tr>
+                                <td>Hacking Social Media Accounts</td>
+                                <td><a href="https://github.com/DevVj-1/Hacking-Social_Media-Accounts"
+                                        target="_blank">Hacking Social Media</a></td>
+                            </tr>
+                            <tr>
+                                <td>Red Python Scripts</td>
+                                <td><a href="https://github.com/davidbombal/red-python-scripts" target="_blank">Red
+                                        Python Scripts</a></td>
+                            </tr>
+                            <tr>
+                                <td>Pentest Everything</td>
+                                <td><a href="https://viperone.gitbook.io/pentest-everything" target="_blank">Pentest
+                                        Everything</a></td>
+                            </tr>
+                            <tr>
+                                <td>OWASP Web Security Testing Guide</td>
+                                <td><a href="https://github.com/OWASP/wstg/tree/master" target="_blank">OWASP Web
+                                        Security Testing Guide</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="content" id="photo-metadata-viewer">
+            <h2>Exif-Metadata Viewer</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Raw Pics - Photo Metadata Viewer</td>
+                        <td><a href="https://raw.pics.io/photo-metadata-viewer" target="_blank">raw.pics.io</a></td>
+                    </tr>
+                    <tr>
+                        <td>Jimpl EXIF Viewer</td>
+                        <td><a href="https://jimpl.com/" target="_blank">jimpl.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Apotelyt Camera EXIF Viewer</td>
+                        <td><a href="https://apotelyt.com/camera-exif/exif-data-viewer#image-upload"
+                                target="_blank">apotelyt.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Photo Metadata Viewer</td>
+                        <td><a href="https://www.canto.com/blog/photo-metadata-viewer/" target="_blank">Canto</a></td>
+                    </tr>
+                    <tr>
+                        <td>Best Photo Metadata Viewer Tools</td>
+                        <td><a href="https://picvario.com/10-best-photo-metadata-viewer-tools-in-2021/"
+                                target="_blank">Picvario</a></td>
+                    </tr>
+                    <tr>
+                        <td>Analyze Photo Metadata</td>
+                        <td><a href="https://compress-or-die.com/analyze" target="_blank">Compress or Die</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="content active" id="Info-gathering">
+            <h2>Whois Lookup</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>NSLookup</td>
+                        <td><a href="https://www.nslookup.io/" target="_blank">NSLookup.io</a></td>
+                    </tr>
+                    <tr>
+                        <td>Whois.com</td>
+                        <td><a href="https://www.whois.com/whois/" target="_blank">Whois.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>ARIN Whois</td>
+                        <td><a href="https://whois.arin.net/ui/" target="_blank">ARIN Whois</a></td>
+                    </tr>
+                    <tr>
+                        <td>Netcraft Site Report</td>
+                        <td><a href="https://sitereport.netcraft.com/" target="_blank">Netcraft</a></td>
+                    </tr>
+                    <tr>
+                        <td>DomainTools Whois</td>
+                        <td><a href="https://whois.domaintools.com/" target="_blank">DomainTools</a></td>
+                    </tr>
+                    <tr>
+                        <td>Who.is</td>
+                        <td><a href="https://who.is/" target="_blank">Who.is</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>DNS + Reverse lookup</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>NSLookup</td>
+                        <td><a href="https://www.nslookup.io/" target="_blank">NSLookup.io</a></td>
+                    </tr>
+                    <tr>
+                        <td>DNS checker</td>
+                        <td><a href="https://dnschecker.org/all-tools.php" target="_blank">DNS checker</a></td>
+                    </tr>
+                    <tr>
+                        <td>IntroDNS</td>
+                        <td><a href="https://intodns.com/" target="_blank">IntroDNS</a></td>
+                    </tr>
+                    <tr>
+                        <td>Robotex DNS Info Gathering</td>
+                        <td><a href="http://rebotex.com/" target="_blank">Robotex</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>SPF + Other Record Finder</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>MXToolBox</td>
+                        <td>See All in One Tools</td>
+                    </tr>
+                    <tr>
+                        <td>Kittenmap</td>
+                        <td><a href="https://www.kitterman.com/spf/validate.html" target="_blank">kitterman.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Emkei CZ</td>
+                        <td><a href="https://emkei.cz/" target="_blank">emkei.cz</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Discovering Technologies</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Web Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sitereport Netcraft</td>
+                        <td><a href="https://sitereport.netcraft.com/" target="_blank">netcraft</a></td>
+                    </tr>
+                    <tr>
+                        <td>Wappalyzer Tech Detection</td>
+                        <td><a href="https://www.wappalyzer.com/" target="_blank">Wappalyzer</a></td>
+                    </tr>
+                    <tr>
+                        <td>Buildwith</td>
+                        <td><a href="https://builtwith.com/" target="_blank">Buildwith</a></td>
+                    </tr>
+                    <tr>
+                        <td>Robtex Tech Detection</td>
+                        <td><a href="https://www.robtex.com/" target="_blank">Robtex</a></td>
+                    </tr>
+                    <tr>
+                        <td>W3techs Technologies Detection</td>
+                        <td><a href="https://w3techs.com/sites/info/tesla.com" target="_blank">w3techs</a></td>
+                    </tr>
+                    <tr>
+                        <td>whatcms cms detection</td>
+                        <td><a href="https://whatcms.org/" target="_blank">whatcms</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>aws bucket detection</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>AWS bucket</td>
+                        <td><a href="https://buckets.grayhatwarfare.com/" target="_blank">aws buckets grayhatwarfare</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Scanning Web and Server Online</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nikto Online</td>
+                        <td><a href="https://nikto.online/" target="_blank">nikto.online</a></td>
+                    </tr>
+                    <tr>
+                        <td>HackerTarget</td>
+                        <td><a href="https://hackertarget.com/nmap-online-port-scanner/"
+                                target="_blank">hackertarget.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>PenTest-Tools</td>
+                        <td><a href="https://pentest-tools.com/network-vulnerability-scanning/port-scanner-online-nmap?view_report=true"
+                                target="_blank">pentest-tools.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>DNSChecker Port Scanner</td>
+                        <td><a href="https://dnschecker.org/port-scanner.php" target="_blank">dnschecker.org</a></td>
+                    </tr>
+                    <tr>
+                        <td>URLScan</td>
+                        <td><a href="https://urlscan.io/" target="_blank">urlscan.io</a></td>
+                    </tr>
+                    <tr>
+                        <td>URLDNA</td>
+                        <td><a href="https://urldna.io/" target="_blank">urldna.io</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Favicon Icon Database</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>OWASP Favicon Database</td>
+                        <td><a href="https://wiki.owasp.org/index.php/OWASP_favicon_database"
+                                target="_blank">wiki.owasp.org</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Firewall Detection Tools</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>WAF Detection (wafw00f)</td>
+                        <td><a href="https://github.com/EnableSecurity/wafw00f">wafw00f</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>CIDR to IP Conversion</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>IP Address Guide</td>
+                        <td><a href="https://www.ipaddressguide.com/cidr" target="_blank">ipaddressguide.com</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="content" id="Info-IP">
+            <h2>IP address through gather info</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>AbuseIPDB</td>
+                        <td>
+                            <a href="https://www.abuseipdb.com/" target="_blank">
+                                abuseipdb.com
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Talos Intelligence</td>
+                        <td>
+                            <a href="https://www.talosintelligence.com/" target="_blank">
+                                talosintelligence.com
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>IPInfo Reverse IP API</td>
+                        <td>
+                            <a href="https://ipinfo.io/products/reverse-ip-api" target="_blank">
+                                ipinfo.io
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>IPAPI</td>
+                        <td>
+                            <a href="https://ipapi.co/" target="_blank">
+                                ipapi.co
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Netlas Host</td>
+                        <td>
+                            <a href="https://app.netlas.io/host/" target="_blank">
+                                netlas.io
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Geolocation Through Get Info</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>GPS Coordinates</td>
+                        <td><a href="https://www.gps-coordinates.net/" target="_blank">gps-coordinates.net</a></td>
+                    </tr>
+                    <tr>
+                        <td>GeoGuessr</td>
+                        <td><a href="https://www.geoguessr.com/" target="_blank">geoguessr.com</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="content" id="Search-Engine">
+            <h2>Search Engines</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Shodan</td>
+                        <td><a href="https://www.shodan.io/" target="_blank">shodan.io</a></td>
+                    </tr>
+                    <tr>
+                        <td>Censys</td>
+                        <td><a href="https://search.censys.io/" target="_blank">censys.io</a></td>
+                    </tr>
+                    <tr>
+                        <td>Hunter</td>
+                        <td><a href="https://hunter.how/" target="_blank">hunter.how</a></td>
+                    </tr>
+                    <tr>
+                        <td>PublicWWW</td>
+                        <td><a href="https://publicwww.com/" target="_blank">publicwww.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>ZoomEye</td>
+                        <td><a href="https://www.zoomeye.hk/login" target="_blank">zoomeye.hk</a></td>
+                    </tr>
+                    <tr>
+                        <td>ZoomEye Superset</td>
+                        <td><a href="https://www.zoomeye.hk/searchResult?q=%2Bapp%3A%22Superset%22+%2Bport%3A80"
+                                target="_blank">ZoomEye Superset</a></td>
+                    </tr>
+                    <tr>
+                        <td>Grep.app</td>
+                        <td><a href="https://grep.app/" target="_blank">grep.app</a></td>
+                    </tr>
+                    <tr>
+                        <td>Onyphe</td>
+                        <td><a href="https://www.onyphe.io/" target="_blank">onyphe.io</a></td>
+                    </tr>
+                    <tr>
+                        <td>FOFA</td>
+                        <td><a href="https://en.fofa.info/" target="_blank">fofa.info</a></td>
+                    </tr>
+                    <tr>
+                        <td>FullHunt</td>
+                        <td><a href="https://fullhunt.io/" target="_blank">fullhunt.io</a></td>
+                    </tr>
+                    <tr>
+                        <td>GreyNoise Viz</td>
+                        <td><a href="https://viz.greynoise.io/" target="_blank">greynoise.io</a></td>
+                    </tr>
+                    <tr>
+                        <td>SearchCode</td>
+                        <td><a href="https://searchcode.com/" target="_blank">searchcode.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Awesome Hacker Search Engines</td>
+                        <td><a href="https://github.com/edoardottt/awesome-hacker-search-engines"
+                                target="_blank">GitHub</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="content" id="All-In-One-Tools">
+            <h2>All in One Tools</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>YouGetSignal</td>
+                        <td><a href="https://www.yougetsignal.com/" target="_blank">yougetsignal.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>MXToolBox</td>
+                        <td><a href="https://mxtoolbox.com/" target="_blank">mxtoolbox.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>ViewDNS</td>
+                        <td><a href="https://viewdns.info/" target="_blank">viewdns.info</a></td>
+                    </tr>
+                    <tr>
+                        <td>Lopseg</td>
+                        <td><a href="https://www.lopseg.com.br/" target="_blank">lopseg.com.br</a></td>
+                    </tr>
+                    <tr>
+                        <td>IP Address Guide</td>
+                        <td><a href="https://www.ipaddressguide.com/" target="_blank">ipaddressguide.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>WhoXY</td>
+                        <td><a href="https://www.whoxy.com/" target="_blank">whoxy.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Domain Codex</td>
+                        <td><a href="https://www.domaincodex.com/" target="_blank">domaincodex.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>WebToolHub Extension</td>
+                        <td>WebToolHub</td>
+                    </tr>
+                    <tr>
+                        <td>Maltego Extension</td>
+                        <td>Maltego</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="content" id="Encode-Decode-Encryption-Decryption">
+            <h2>Hashes + Encode Decode + Encryption Decryption</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CyberChef</td>
+                        <td><a href="https://gchq.github.io/CyberChef/" target="_blank">gchq.github.io</a></td>
+                    </tr>
+                    <tr>
+                        <td>Hashcat Example Hashes</td>
+                        <td><a href="https://hashcat.net/wiki/doku.php?id=example_hashes"
+                                target="_blank">hashcat.net</a></td>
+                    </tr>
+                    <tr>
+                        <td>Hashes Decrypt</td>
+                        <td><a href="https://hashes.com/en/decrypt/hash" target="_blank">hashes.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>CrackStation</td>
+                        <td><a href="https://crackstation.net/" target="_blank">crackstation.net</a></td>
+                    </tr>
+                    <tr>
+                        <td>Base64 Decode</td>
+                        <td><a href="https://www.base64decode.org/" target="_blank">base64decode.org</a></td>
+                    </tr>
+                    <tr>
+                        <td>Devglan - Text Encryption/Decryption</td>
+                        <td><a href="https://www.devglan.com/online-tools/text-encryption-decryption"
+                                target="_blank">devglan.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>GhostVolt Encryption</td>
+                        <td><a href="https://ghostvolt.com/text-encryption-decryption.html"
+                                target="_blank">ghostvolt.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Devglan AES Encryption/Decryption</td>
+                        <td><a href="https://www.devglan.com/online-tools/aes-encryption-decryption"
+                                target="_blank">devglan.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>MagicTool Text Decrypt</td>
+                        <td><a href="https://magictool.ai/tool/decrypt-text/" target="_blank">magictool.ai</a></td>
+                    </tr>
+                    <tr>
+                        <td>JavaInUse AES Generator</td>
+                        <td><a href="https://www.javainuse.com/aesgenerator" target="_blank">javainuse.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>MD5 Hashing</td>
+                        <td><a href="https://md5hashing.net/hash/md5" target="_blank">md5hashing.net</a></td>
+                    </tr>
+                    <tr>
+                        <td>JWT Decoder-1</td>
+                        <td><a href="https://fusionauth.io/dev-tools/jwt-decoder" target="_blank">fusionauth.io</a></td>
+                    </tr>
+                    <tr>
+                        <td>JWT Decoder-2</td>
+                        <td><a href="https://jwt.io" target="_blank">jwt.io</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="content" id="Dorks">
+            <h2>Shodan Dorks</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Top Shodan Dorks</td>
+                        <td><a href="https://securitytrails.com/blog/top-shodan-dorks"
+                                target="_blank">securitytrails.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Shodan GitHub - Lothos</td>
+                        <td><a href="https://github.com/lothos612/shodan" target="_blank">Lothos github.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Shodan Dorks Repo</td>
+                        <td><a href="https://github.com/mr-exo/shodan-dorks" target="_blank">mr-exo github.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Shodan Dorks Guide</td>
+                        <td><a href="https://mr-koanti.github.io/shodan" target="_blank">mr-koanti github </a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Google Dorking</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>GDorks by Ishanoshada</td>
+                        <td><a href="https://github.com/Ishanoshada/GDorks/"
+                                target="_blank">github.com/Ishanoshada/GDorks</a></td>
+                    </tr>
+                    <tr>
+                        <td>Dorktxt on CourseHero</td>
+                        <td><a href="https://www.coursehero.com/file/51926588/Dorktxt/"
+                                target="_blank">coursehero.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>7000 Google Dork List</td>
+                        <td><a href="https://github.com/aleedhillon/7000-Google-Dork-List/blob/master/7000_google_dork_list.txt"
+                                target="_blank">github.com/aleedhillon</a></td>
+                    </tr>
+                    <tr>
+                        <td>Exploit-DB Google Hacking Database</td>
+                        <td><a href="https://www.exploit-db.com/google-hacking-database"
+                                target="_blank">exploit-db.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>SQL Injection Google Dork List</td>
+                        <td><a href="https://github.com/ShivamRai2003/SQL-Injection-Google-Dork-List/blob/main/SQL-Injection-Dork%20List"
+                                target="_blank">github.com/ShivamRai2003</a></td>
+                    </tr>
+                    <tr>
+                        <td>Dolkings by Yutixcode</td>
+                        <td><a href="https://github.com/Yutixcode/Dolkings"
+                                target="_blank">github.com/Yutixcode/Dolkings</a></td>
+                    </tr>
+                    <tr>
+                        <td>Full Google Dorks List by TUXCMD</td>
+                        <td><a href="https://github.com/TUXCMD/Google-Dorks-Full_list"
+                                target="_blank">github.com/TUXCMD</a></td>
+                    </tr>
+                    <tr>
+                        <td>Dork Genius</td>
+                        <td><a href="https://dorkgenius.com/" target="_blank">dorkgenius.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>DorkGPT</td>
+                        <td><a href="https://www.dorkgpt.com/" target="_blank">dorkgpt.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Bug Bounty Google Dork Search</td>
+                        <td><a href="https://dork.bugbountyhunting.com/" target="_blank">bugbountyhunting.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>DorkSearch</td>
+                        <td><a href="https://www.dorksearch.com/" target="_blank">dorksearch.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Top 25 Advanced Google Dorks</td>
+                        <td><a href="https://osintteam.blog/top-25-advanced-google-dorks-for-uncovering-sensitive-documents-a9705e05353d"
+                                target="_blank">osintteam.blog</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="content" id="online-subdomain-wordlists">
+            <h2>Subdomain Finding Using Websites</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Project Discovery Chaos</td>
+                        <td><a href="https://chaos.projectdiscovery.io/#/" target="_blank">chaos.projectdiscovery.io</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>C99 Subdomain Finder</td>
+                        <td><a href="https://subdomainfinder.c99.nl/" target="_blank">subdomainfinder.c99.nl</a></td>
+                    </tr>
+                    <tr>
+                        <td>VirusTotal</td>
+                        <td><a href="https://www.virustotal.com/gui/home/url" target="_blank">virustotal.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>crt.sh - Certificate Search</td>
+                        <td><a href="https://crt.sh/" target="_blank">crt.sh</a></td>
+                    </tr>
+                    <tr>
+                        <td>Wayback Machine CDX Server</td>
+                        <td><a href="https://archive.org/developers/wayback-cdx-server.html"
+                                target="_blank">archive.org</a></td>
+                    </tr>
+                    <tr>
+                        <td>DNS Dumpster</td>
+                        <td><a href="https://dnsdumpster.com/" target="_blank">dnsdumpster.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Entrust Certificate Search</td>
+                        <td><a href="https://ui.ctsearch.entrust.com/ui/ctsearchui" target="_blank">entrust.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Onyphe</td>
+                        <td><a href="https://www.onyphe.io/signin" target="_blank">onyphe.io</a></td>
+                    </tr>
+                    <tr>
+                        <td>FOFA</td>
+                        <td><a href="https://en.fofa.info/" target="_blank">fofa.info</a></td>
+                    </tr>
+                    <tr>
+                        <td>FullHunt</td>
+                        <td><a href="https://fullhunt.io/" target="_blank">fullhunt.io</a></td>
+                    </tr>
+                    <tr>
+                        <td>OSINT Subdomain Finder</td>
+                        <td><a href="https://osint.sh/subdomain/" target="_blank">osint.sh</a></td>
+                    </tr>
+                    <tr>
+                        <td>Pentest Tools - Subdomain Finder</td>
+                        <td><a href="https://pentest-tools.com/information-gathering/find-subdomains-of-domain"
+                                target="_blank">pentest-tools.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>API Subdomain Center</td>
+                        <td><a href="https://api.subdomain.center/?domain=" target="_blank">api.subdomain.center</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Subdomain Finder</td>
+                        <td><a href="https://subdomainfinder.io/" target="_blank">subdomainfinder.io</a></td>
+                    </tr>
+                    <tr>
+                        <td>WhoisXML API Subdomains</td>
+                        <td><a href="https://subdomains.whoisxmlapi.com/" target="_blank">whoisxmlapi.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Spyse Python Tool</td>
+                        <td><a href="https://github.com/zeropwn/spyse.py" target="_blank">github.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>WebScout Lookup</td>
+                        <td><a href="https://webscout.io/lookup" target="_blank">webscout.io</a></td>
+                    </tr>
+                    <tr>
+                        <td>Security Trails</td>
+                        <td><a href="https://securitytrails.com/" target="_blank">securitytrails.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>BinaryEdge Domains</td>
+                        <td><a href="https://app.binaryedge.io/services/domains" target="_blank">binaryedge.io</a></td>
+                    </tr>
+                    <tr>
+                        <td>Facebook Certificate Transparency Tools</td>
+                        <td><a href="https://developers.facebook.com/tools/ct/" target="_blank">facebook.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>GreatHeart Subdomain Guide</td>
+                        <td><a href="https://www.greatheart.io/post/the-hunt-for-subdomains-a-guide-to-subdomain-enumeration"
+                                target="_blank">greatheart.io</a></td>
+                    </tr>
+                    <tr>
+                        <td>GeeksForGeeks Subdomain Enumeration</td>
+                        <td><a href="https://www.geeksforgeeks.org/sd-goo-enumerate-subdomains-through-google-dorks/"
+                                target="_blank">geeksforgeeks.org</a></td>
+                    </tr>
+                    <tr>
+                        <td>NahamSec Hostile SubBruteforcer</td>
+                        <td><a href="https://github.com/nahamsec/HostileSubBruteforcer" target="_blank">github.com</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Wordlist + Payload</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Payloads All The Things</td>
+                        <td><a href="https://github.com/swisskyrepo/PayloadsAllTheThings" target="_blank">swisskyrepo
+                                github</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Assetnote Wordlists</td>
+                        <td><a href="https://wordlists.assetnote.io/" target="_blank">wordlists assetnote</a></td>
+                    </tr>
+                    <tr>
+                        <td>SecLists</td>
+                        <td><a href="https://github.com/danielmiessler/SecLists/" target="_blank">SecLists github</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bug Hunter Handbook - Wordlists</td>
+                        <td><a href="https://gowthams.gitbook.io/bughunter-handbook/fuzzing-wordlists"
+                                target="_blank">fuzzing-wordlists</a></td>
+                    </tr>
+                    <tr>
+                        <td>Yassine Aboukir - API Wordlist</td>
+                        <td><a href="https://gist.github.com/yassineaboukir/8e12adefbd505ef704674ad6ad48743d"
+                                target="_blank">API wordlist</a></td>
+                    </tr>
+                    <tr>
+                        <td>Bug Bounty Wordlists - API</td>
+                        <td><a href="https://github.com/Karanxa/Bug-Bounty-Wordlists/blob/main/api.txt"
+                                target="_blank">API wordlist github</a></td>
+                    </tr>
+                    <tr>
+                        <td>Bug Bounty Wordlists (Full)</td>
+                        <td><a href="https://github.com/Karanxa/Bug-Bounty-Wordlists" target="_blank">Karanxa
+                                Bug-Bounty-Wordlists</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ethereum Execution APIs - Wordlist</td>
+                        <td><a href="https://github.com/ethereum/execution-apis/blob/main/wordlist.txt"
+                                target="_blank">ethereum Wordlists</a></td>
+                    </tr>
+                    <tr>
+                        <td>SecLists API Seen in Wild</td>
+                        <td><a href="https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web-Content/api/api-seen-in-wild.txt"
+                                target="_blank">API github</a></td>
+                    </tr>
+                    <tr>
+                        <td>JWT Secrets List</td>
+                        <td><a href="https://github.com/wallarm/jwt-secrets/blob/master/jwt.secrets.list"
+                                target="_blank">JWT github list</a></td>
+                    </tr>
+                    <tr>
+                        <td>API Wordlist by Chris Lockard</td>
+                        <td><a href="https://github.com/chrislockard/api_wordlist" target="_blank">chrislockard
+                                api_wordlist</a></td>
+                    </tr>
+                    <tr>
+                        <td>API Endpoints Wordlist Gist</td>
+                        <td><a href="https://gist.github.com/helcaraxeals/7c45201b1c957ecea82ef7800da4bfa4"
+                                target="_blank">helcaraxeals github</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Extract Domain + Remve Duplicates</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>extract domain from source + any text</td>
+                        <td><a href="https://ultimatedomains.com/extract-domains.php">Extract domain</a></td>
+                    </tr>
+                    <tr>
+                        <td>Remove duplicate domain</td>
+                        <td><a href="https://dedupelist.com/">dedupelist</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Crawling Websites + Directory Finding</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Crawling Domain</td>
+                        <td><a href="http://web.archive.org/cdx/search/cdx?url=*.domain.com&collapse=urlkey"
+                                target="_blank">web.archive.org</a></td>
+                    </tr>
+                    <tr>
+                        <td>crawling links</td>
+                        <td><a href="http://web.archive.org/cdx/search/cdx?url=domain/*&output=text&fl=original&collapse=urlkey&from="
+                                target="_blank">web.archive.org</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="content" id="web-vulnerabilities-report">
+            <h2>Web Vulnerabilities Reports</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title / Resource</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Worldwide Server-Side Cache Poisoning on Akamai Edge Nodes (50K Bounty)</td>
+                        <td><a href="https://medium.com/@jacopotediosi/worldwide-server-side-cache-poisoning-on-all-akamai-edge-nodes-50k-bounty-earned-f97d80f3922b"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                    <tr>
+                        <td>HackerOne Report - Server-Side Vulnerability</td>
+                        <td><a href="https://hackerone.com/reports/884756" target="_blank">View on HackerOne</a></td>
+                    </tr>
+                    <tr>
+                        <td>How I Earned $750 Bounty Reward from AT&T Bug Bounty</td>
+                        <td><a href="https://ad3sh.medium.com/how-i-earned-750-bounty-reward-from-at-t-bug-bounty-adesh-kolte-ae62dea44083"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                    <tr>
+                        <td>BugReader - Bug Bounty Reports</td>
+                        <td><a href="https://bugreader.com/reports" target="_blank">Explore on BugReader</a></td>
+                    </tr>
+                    <tr>
+                        <td>Bug Bounty Presentations by Harsh Bothra</td>
+                        <td><a href="https://speakerdeck.com/harshbothra" target="_blank">View Presentations</a></td>
+                    </tr>
+                    <tr>
+                        <td>HackerOne Reports Collection</td>
+                        <td><a href="https://github.com/Ravirajrao/HackerOne-Reports" target="_blank">Explore on
+                                GitHub</a></td>
+                    </tr>
+                    <tr>
+                        <td>HowToHunt by Kathan P19</td>
+                        <td><a href="https://github.com/KathanP19/HowToHunt" target="_blank">Visit GitHub Repository</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Security Research - Real-Life Cases</td>
+                        <td><a href="https://security.alwaysdata.com/proj1" target="_blank">View Details</a></td>
+                    </tr>
+                    <tr>
+                        <td>HowToHunt Guide by Kathan</td>
+                        <td><a href="https://kathan19.gitbook.io/howtohunt" target="_blank">Explore Guide</a></td>
+                    </tr>
+                    <tr>
+                        <td>GitHub - HowToHunt (ReadMe)</td>
+                        <td><a href="https://github.com/KathanP19/HowToHunt?tab=readme-ov-file" target="_blank">Visit
+                                Repository</a></td>
+                    </tr>
+                    <tr>
+                        <td>How I Found My First RCE</td>
+                        <td><a href="https://mchklt.medium.com/how-i-found-my-first-rce-f80073626fff"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                    <tr>
+                        <td>Make Money Using Google Hacking</td>
+                        <td><a href="https://ott3rly.medium.com/make-money-using-google-hacking-0920662bb300"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                    <tr>
+                        <td>Broken Access Control Leads to Admin Role Takeover</td>
+                        <td><a href="https://0xebn-taimia.medium.com/broken-access-control-leads-to-take-admin-role-920e46d496b9"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                    <tr>
+                        <td>Hacking NASA: Critical SSRF, Subdomain Takeover, and XSS</td>
+                        <td><a href="https://nickguitar.medium.com/hacking-nasa-critical-ssrf-subdomain-takeover-xss-699be0ce3c06#:~:text=After%20collecting%20a%20good%20amount%20(about"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Password Reset Vulnerabilities</h2>
+            <p>This section includes detailed write-ups and resources that explore vulnerabilities in password reset
+                functionalities, such as account takeovers, token manipulation, and bypass techniques.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title / Resource</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Reset the Password for Vulnerability</td>
+                        <td><a href="https://medium.com/@sathvika03/reset-the-password-for-vulnerability-b0805f7adf9c"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                    <tr>
+                        <td>Password Reset Vulnerability Notes</td>
+                        <td><a href="https://www.cliffsnotes.com/study-notes/16103381" target="_blank">CliffsNotes</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Explore Hacks - Password Reset</td>
+                        <td><a href="https://medium.com/@Expl0re_hacks/list/44ee84aed048" target="_blank">Read on
+                                Medium</a></td>
+                    </tr>
+                    <tr>
+                        <td>Password Reset Vulnerabilities - Bug Hunter Handbook</td>
+                        <td><a href="https://gowthams.gitbook.io/bughunter-handbook/list-of-vulnerabilities-bugs/password-reset"
+                                target="_blank">View Handbook</a></td>
+                    </tr>
+                    <tr>
+                        <td>HackTricks - Password Reset</td>
+                        <td><a href="https://book.hacktricks.xyz/pentesting-web/reset-password" target="_blank">Explore
+                                HackTricks</a></td>
+                    </tr>
+                    <tr>
+                        <td>Account Takeover Through Password Reset Functionality</td>
+                        <td><a href="https://medium.com/@0xd3vil/account-takeover-of-any-user-through-password-reset-functionality-42993589c94f"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                    <tr>
+                        <td>Account Takeover Through Password Reset Poisoning</td>
+                        <td><a href="https://vbharad.medium.com/account-takeover-through-password-reset-poisoning-72989a8bb8ea"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                    <tr>
+                        <td>Full Account Takeover via Password Reset Link Manipulation</td>
+                        <td><a href="https://medium.com/h7w/full-account-takeover-via-password-reset-link-manipulation-840fb9402967"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                    <tr>
+                        <td>Account Takeover via Password Reset</td>
+                        <td><a href="https://medium.com/@yassergersy/account-take-over-via-reset-password-f2e9d887bce1"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                    <tr>
+                        <td>Hunting for Bugs in Password Reset Feature</td>
+                        <td><a href="https://sm4rty.medium.com/hunting-for-bugs-in-password-reset-feature-2021-3def1b391bef"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                    <tr>
+                        <td>Bypassing Current Password Verification</td>
+                        <td><a href="https://infosecwriteups.com/how-i-bypassed-current-password-verification-bfa9d8c3f471"
+                                target="_blank">Read on InfoSec Write-ups</a></td>
+                    </tr>
+                    <tr>
+                        <td>Account Takeover Through Reset Password Token Leaked in Response</td>
+                        <td><a href="https://infosecwriteups.com/account-take-over-through-reset-password-token-leaked-in-response-2500-reward-b643f97a7c67"
+                                target="_blank">Read on InfoSec Write-ups</a></td>
+                    </tr>
+                    <tr>
+                        <td>HackerOne Report - Password Reset Issue</td>
+                        <td><a href="https://hackerone.com/reports/342693" target="_blank">View on HackerOne</a></td>
+                    </tr>
+                    <tr>
+                        <td>CSRF at Password Reset Page</td>
+                        <td><a href="https://hacktivator.medium.com/bugbounty-c-s-r-f-at-password-reset-page-93bd440cee61"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                    <tr>
+                        <td>Anugrah SR - Security Research Blog</td>
+                        <td><a href="https://anugrahsr.github.io/" target="_blank">Visit Blog</a></td>
+                    </tr>
+                    <tr>
+                        <td>10 Password Reset Flaws - Anugrah SR</td>
+                        <td><a href="https://anugrahsr.github.io/posts/10-Password-reset-flaws/" target="_blank">Read
+                                Post</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Authentication Vulnerabilities</h2>
+            <p>This section covers resources and write-ups that focus on authentication vulnerabilities such as login
+                bypass, social login attacks, and security issues in signup/register functionalities.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title / Resource</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10 Most Common Security Issues in Login Functionalities</td>
+                        <td><a href="https://redhuntlabs.com/blog/10-most-common-security-issues-found-in-login-functionalities/#:~:text=Vulnerability%20Test%20Cases.%20Default"
+                                target="_blank">Read on RedHuntLabs</a></td>
+                    </tr>
+                    <tr>
+                        <td>Hunting for Bugs in Sign-Up/Register Feature</td>
+                        <td><a href="https://sm4rty.medium.com/hunting-for-bugs-in-sign-up-register-feature-2021-c47035481212"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                    <tr>
+                        <td>Authentication Bypass via Response Manipulation</td>
+                        <td><a href="https://ms-official5878.medium.com/authentication-bypass-via-response-manipulation-ee4b5b7ea9d6"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                    <tr>
+                        <td>Authentication Bypass Vulnerability - CVE-2023-43154</td>
+                        <td><a href="https://medium.com/@allypetitt/how-i-found-authentication-bypass-vulnerability-cve-2023-43154-b55dee7c876b"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                    <tr>
+                        <td>Authentication Vulnerabilities Explained</td>
+                        <td><a href="https://www.strongdm.com/blog/authentication-vulnerabilities" target="_blank">Read
+                                on StrongDM</a></td>
+                    </tr>
+                    <tr>
+                        <td>Attacking Social Logins: Pre-Authentication Account Takeover</td>
+                        <td><a href="https://hbothra22.medium.com/attacking-social-logins-pre-authentication-account-takeover-790248cfdc3"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Multi-Factor Authentication (MFA) Vulnerabilities</h2>
+            <p>This section highlights resources and write-ups on bypassing Multi-Factor Authentication (MFA)
+                techniques, which can lead to critical security vulnerabilities.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title / Resource</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>MFA Bypassing Techniques to Earn Bounty</td>
+                        <td><a href="https://jjainam16.medium.com/mfa-bypassing-techniques-to-earn-bounty-a416daeab0c9"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                    <tr>
+                        <td>Security Notes on MFA</td>
+                        <td><a href="https://www.cliffsnotes.com/study-notes/16103381" target="_blank">Read on
+                                CliffsNotes</a></td>
+                    </tr>
+                    <tr>
+                        <td>List of Vulnerabilities and Bugs Related to MFA</td>
+                        <td><a href="https://medium.com/@Expl0re_hacks/list/44ee84aed048" target="_blank">Read on
+                                Medium</a></td>
+                    </tr>
+                    <tr>
+                        <td>Bughunter Handbook: MFA and Password Vulnerabilities</td>
+                        <td><a href="https://gowthams.gitbook.io/bughunter-handbook/list-of-vulnerabilities-bugs/password-reset"
+                                target="_blank">Read on GitBook</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Pre-Authentication Vulnerabilities</h2>
+            <p>This section provides resources and case studies focusing on pre-authentication issues, including email
+                verification bypass vulnerabilities and related security concerns.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title / Resource</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Confirm Any Email on Instagram and Facebook (Meta Bug Bounty)</td>
+                        <td><a href="https://medium.com/@kassembazzoun/confirm-any-email-on-instagram-and-facebook-meta-bug-bounty-5000-e3b05cccb4b6"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                    <tr>
+                        <td>BugReader: Pre-Authentication Report</td>
+                        <td><a href="https://bugreader.com/kbazzoun@287" target="_blank">Read on BugReader</a></td>
+                    </tr>
+                    <tr>
+                        <td>Fraud Prevention and Account Verification</td>
+                        <td><a href="https://www.fraud.com/post/account-verification" target="_blank">Read on
+                                Fraud.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Email Verification Bypass Worth $1,000+</td>
+                        <td><a href="https://vijetareigns.medium.com/email-verification-bypass-worth-cbb65a68a34f"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                    <tr>
+                        <td>Account Takeover via Email Confirmation</td>
+                        <td><a href="https://cristivlad.medium.com/account-takeover-via-email-confirmation-763ce4fd9ca8"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                    <tr>
+                        <td>Email Verification Bypass Vulnerability in Application XYZ</td>
+                        <td><a href="https://medium.com/@kataeriidubstep/how-i-found-a-email-verification-bypass-vulnerability-in-application-xyz-4521ce00063e"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                    <tr>
+                        <td>Email Verification Bypass from P4 to P2</td>
+                        <td><a href="https://medium.com/@akrachliy/email-verification-bypass-from-p4-to-p2-50fa3dde8e5f"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                    <tr>
+                        <td>Confirmation Bypass Case Study</td>
+                        <td><a href="https://medium.com/@navne3t/confirmation-bypass-ab57c29ae413" target="_blank">Read
+                                on Medium</a></td>
+                    </tr>
+                    <tr>
+                        <td>An Unusual Tale of Email Verification Bypass</td>
+                        <td><a href="https://sagarsajeev.medium.com/an-unusual-tale-of-email-verification-bypass-dcf884d544eb"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Change Mail Functionality</h2>
+            <p>This section covers vulnerabilities and issues found in changing email functionalities, such as email
+                duplication bugs and critical security flaws.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title / Resource</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Uncovering a Critical Security Bug: Email Duplication in Password Reset Mechanism</td>
+                        <td><a href="https://medium.com/@siyamhassan.main/uncovering-a-critical-security-bug-email-duplication-in-password-reset-mechanism-44eed804203f"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>File Upload</h2>
+            <p>Resources for identifying and exploiting vulnerabilities in file upload features, including RCE and
+                security checklists.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title / Resource</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>File Upload Security Checklist</td>
+                        <td><a href="https://www.onsecurity.io/blog/file-upload-checklist" target="_blank">Read on
+                                OnSecurity</a></td>
+                    </tr>
+                    <tr>
+                        <td>Hunting for Bugs in File Upload Feature</td>
+                        <td><a href="https://sm4rty.medium.com/hunting-for-bugs-in-file-upload-feature-c3b364fb01ba"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                    <tr>
+                        <td>Simple Remote Code Execution Vulnerability Examples for Beginners</td>
+                        <td><a href="https://ozguralp.medium.com/simple-remote-code-execution-vulnerability-examples-for-beginners-985867878311"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>CORS (Cross-Origin Resource Sharing)</h2>
+            <p>This section focuses on understanding and preventing CORS vulnerabilities.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title / Resource</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CORS Vulnerability: Example and Prevention</td>
+                        <td><a href="https://medium.com/@tushar_rs_/cross-origin-resource-sharing-cors-vulnerability-example-and-prevention-588d299ff185"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>XSS (Cross-Site Scripting)</h2>
+            <p>Resources and guides to understand, exploit, and prevent XSS vulnerabilities, including real-world
+                examples and case studies.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title / Resource</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>A Comprehensive Guide to Cross-Site Scripting (XSS)</td>
+                        <td><a href="https://medium.com/@techmindxperts/a-comprehensive-guide-to-cross-site-scripting-xss-33814b84dfb3"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                    <tr>
+                        <td>How I Found 29 Stored XSS in Modern Framework</td>
+                        <td><a href="https://dewcode.medium.com/how-i-found-29-stored-xss-in-modern-framework-1cfe60a107a0"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                    <tr>
+                        <td>Cross-Site Scripting (XSS) Overview</td>
+                        <td><a href="https://medium.com/@derya.cortuk/cross-site-scripting-82130131e0b4"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                    <tr>
+                        <td>Reading robots.txt Got Me 4 XSS Reports</td>
+                        <td><a href="https://c0nqr0r.medium.com/reading-robots-txt-got-me-4-xss-reports-9fd2234c635f"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>SPF Record</h2>
+            <p>Resources for understanding SPF (Sender Policy Framework) records, common misconfigurations, and
+                real-world exploitation examples.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title / Resource</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>My First Bug - $500</td>
+                        <td><a href="https://medium.com/@abhishekY495/my-first-bug-500-9222998e6249"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                    <tr>
+                        <td>Abusing Autoresponders and Email Bounces</td>
+                        <td><a href="https://medium.com/intigriti/abusing-autoresponders-and-email-bounces-9b1995eb53c2"
+                                target="_blank">Read on Intigriti</a></td>
+                    </tr>
+                    <tr>
+                        <td>How I Hacked Hundreds of Companies Through Their Helpdesk</td>
+                        <td><a href="https://medium.com/intigriti/how-i-hacked-hundreds-of-companies-through-their-helpdesk-b7680ddc2d4c"
+                                target="_blank">Read on Intigriti</a></td>
+                    </tr>
+                    <tr>
+                        <td>Mail Server Misconfiguration</td>
+                        <td><a href="https://shahjerry33.medium.com/mail-server-misconfiguration-f42734d19678"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                    <tr>
+                        <td>Exploitation Hunting of SPF Missing Flags</td>
+                        <td><a href="https://medium.com/@kidnapshadow/how-to-exploitation-hunting-of-spf-sender-policies-framework-missing-flag-by-kidnapshadow-2200dbb0bdc1"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                    <tr>
+                        <td>How to Report DMARC Vulnerabilities for Bounties</td>
+                        <td><a href="https://medium.com/techiepedia/how-to-report-dmarc-vulnerabilities-efficiently-to-earn-bounties-easily-f7a65ecdd20b"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                    <tr>
+                        <td>Understanding SPF Records</td>
+                        <td><a href="https://gdgupta11.medium.com/understanding-spf-record-1afff4a5a4b5"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                    <tr>
+                        <td>HackerOne Report - SPF Vulnerability</td>
+                        <td><a href="https://hackerone.com/reports/629087" target="_blank">Read on HackerOne</a></td>
+                    </tr>
+                    <tr>
+                        <td>My First Finding on Bugcrowd</td>
+                        <td><a href="https://hackergandhi.medium.com/my-first-finding-on-bugcrowd-47a17c1f68eb"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                    <tr>
+                        <td>Enhance Email Security and Configuration</td>
+                        <td><a href="https://medium.com/@sherlock297/enhance-email-security-and-configuration-with-the-email-best-practices-checker-6e2636509403"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                    <tr>
+                        <td>Exploiting SMTP Vulnerabilities for Sensitive Information</td>
+                        <td><a href="https://medium.com/@yonatanmarceiano/exploiting-smtp-vulnerabilities-for-extracting-sensitive-information-from-target-machines-2bc56e26bead"
+                                target="_blank">Read on Medium</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Web Socket Vulnerabilities</h2>
+            <p>WebSocket vulnerabilities, such as Cross-Site WebSocket Hijacking (CSWH), can lead to account takeovers
+                and unauthorized access to sensitive information. Below are some resources to explore WebSocket security
+                issues.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Account Takeover using Cross-Site WebSocket Hijacking (CSWH)</td>
+                        <td><a href="https://sharan-panegav.medium.com/account-takeover-using-cross-site-websocket-hijacking-cswh-99cf9cea6c50"
+                                target="_blank">medium.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>WebSocket Hijacking to Steal Session ID of Victim Users</td>
+                        <td><a href="https://infosecwriteups.com/websocket-hijacking-to-steal-session-id-of-victim-users-bca84243830"
+                                target="_blank">infosecwriteups.com</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Command Injection</h2>
+            <p>Command injection is a critical vulnerability that allows attackers to execute arbitrary commands on the
+                server, leading to data breaches or system compromise. Below is a resource on blind command injection
+                exploitation.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Blind Command Injection: It Hurts</td>
+                        <td><a href="https://shahjerry33.medium.com/blind-command-injection-it-hurts-9f396c1f63f2"
+                                target="_blank">medium.com</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Web Security + Vulnerabilities + Exploit Info</h2>
+            <p>These resources provide comprehensive information on common web security vulnerabilities and how to
+                exploit them. Use them for further study and understanding.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>OWASP Top Ten Cheatsheet</td>
+                        <td><a href="https://cheatsheetseries.owasp.org/IndexTopTen.html"
+                                target="_blank">cheatsheetseries.owasp.org</a></td>
+                    </tr>
+                    <tr>
+                        <td>MDN Web HTTP Documentation</td>
+                        <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP"
+                                target="_blank">developer.mozilla.org</a></td>
+                    </tr>
+                    <tr>
+                        <td>Web Vulnerabilities Methodology</td>
+                        <td><a href="https://book.hacktricks.xyz/pentesting-web/web-vulnerabilities-methodology"
+                                target="_blank">book.hacktricks.xyz</a></td>
+                    </tr>
+                    <tr>
+                        <td>Nu11Security Exploit Resources</td>
+                        <td><a href="https://github.com/nu11secur1ty/nu11secur1ty/tree/master"
+                                target="_blank">github.com</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Bug Bounty Cheatsheet</h2>
+            <p>Bug bounty programs are a great way to practice identifying vulnerabilities. These cheatsheets can guide
+                you in finding common flaws during bug bounty hunting.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bug Bounty Cheatsheet</td>
+                        <td><a href="https://github.com/EdOverflow/bugbounty-cheatsheet/" target="_blank">github.com</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>OWASP Bug Bounty Cheat Sheet</td>
+                        <td><a href="https://owasp.deteact.com/cheat/" target="_blank">owasp.deteact.com</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <div class="content" id="mobile-email-info">
+            <h2>Mobile + Email Information Gathering</h2>
+            <p>These resources provide tools and services to gather mobile, email, and domain-related information for
+                OSINT (Open-Source Intelligence) investigations.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>IMEI Info</td>
+                        <td><a href="https://www.imei.info/" target="_blank">imei.info</a></td>
+                    </tr>
+                    <tr>
+                        <td>Netlas Host Search</td>
+                        <td><a href="https://app.netlas.io/host/" target="_blank">app.netlas.io</a></td>
+                    </tr>
+                    <tr>
+                        <td>eMobileTracker</td>
+                        <td><a href="https://www.emobiletracker.com/" target="_blank">emobiletracker.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Spokeo</td>
+                        <td><a href="https://www.spokeo.com/" target="_blank">spokeo.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>My Email Address</td>
+                        <td><a href="https://my.email.address.is/" target="_blank">my.email.address.is</a></td>
+                    </tr>
+                    <tr>
+                        <td>SkyMem</td>
+                        <td><a href="https://www.skymem.info/srch?q=domain.com&ss=srch" target="_blank">skymem.info</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>That's Them</td>
+                        <td><a href="https://thatsthem.com/" target="_blank">thatsthem.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Synapsint</td>
+                        <td><a href="https://synapsint.com/" target="_blank">synapsint.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>OSINT Industries</td>
+                        <td><a href="https://www.osint.industries/" target="_blank">osint.industries</a></td>
+                    </tr>
+                    <tr>
+                        <td>The OSINT Toolbox (GitHub)</td>
+                        <td><a href="https://github.com/The-Osint-Toolbox"
+                                target="_blank">github.com/The-Osint-Toolbox</a></td>
+                    </tr>
+                    <tr>
+                        <td>Whitepages</td>
+                        <td><a href="https://www.whitepages.com/" target="_blank">whitepages.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>F-Secure Identity Theft Checker</td>
+                        <td><a href="https://www.f-secure.com/en/identity-theft-checker"
+                                target="_blank">f-secure.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Norton Breach Detection</td>
+                        <td><a href="https://in.norton.com/breach-detection" target="_blank">norton.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Breach Directory</td>
+                        <td><a href="https://breachdirectory.org/" target="_blank">breachdirectory.org</a></td>
+                    </tr>
+                    <tr>
+                        <td>Have I Been Pwned</td>
+                        <td><a href="https://haveibeenpwned.com/" target="_blank">haveibeenpwned.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>EmailRep</td>
+                        <td><a href="https://emailrep.io/" target="_blank">emailrep.io</a></td>
+                    </tr>
+                    <tr>
+                        <td>IntelX</td>
+                        <td><a href="https://intelx.io/" target="_blank">intelx.io</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <div class="content" id="Web-Security-Vulnerabilities-exploit-automated-tools">
+            <h2>XSS (Cross-Site Scripting)</h2>
+            <p>XSS vulnerabilities allow attackers to inject malicious scripts into web pages viewed by other users.
+                Below are some resources for understanding and detecting XSS vulnerabilities.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>OWASP XSS Filter Evasion Cheat Sheet</td>
+                        <td><a href="https://cheatsheetseries.owasp.org/cheatsheets/XSS_Filter_Evasion_Cheat_Sheet.html"
+                                target="_blank">owasp.org</a></td>
+                    </tr>
+                    <tr>
+                        <td>Automating XSS Detection</td>
+                        <td><a href="https://medium.com/@mullangisashank/automating-xss-detection-how-my-setup-earned-me-a-few-spots-in-various-hall-of-fames-cb7f35ebed1e"
+                                target="_blank">medium.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>XSS in 2021</td>
+                        <td><a href="https://netsec.expert/posts/xss-in-2021/?source=post_page-----1cfe60a107a0--------------------------------"
+                                target="_blank">netsec.expert</a></td>
+                    </tr>
+                    <tr>
+                        <td>Finding XSS on Vulnerability Disclosure Program</td>
+                        <td><a href="https://medium.com/@DrakenKun/how-i-was-able-to-find-4-cross-site-scripting-xss-on-vulnerability-disclosure-program-e2f39199ae16"
+                                target="_blank">medium.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Ultimate Tips and Tricks to Find More XSS Vulnerabilities</td>
+                        <td><a href="https://bxmbn.medium.com/ultimate-tips-and-tricks-to-find-more-cross-site-scripting-vulnerabilities-d2913765e2d5"
+                                target="_blank">medium.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>HackerOne: How XSS Payloads Work</td>
+                        <td><a href="https://www.hackerone.com/knowledge-center/how-xss-payloads-work-code-examples-preventing-them"
+                                target="_blank">hackerone.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>XSS in Mobile Devices</td>
+                        <td><a href="https://brutelogic.com.br/blog/xss-in-mobile-devices/"
+                                target="_blank">brutelogic.com.br</a></td>
+                    </tr>
+                    <tr>
+                        <td>XSS Payloads - Gist</td>
+                        <td><a href="https://gist.github.com/michenriksen/d729cd67736d750b3551876bbedbe626"
+                                target="_blank">gist.github.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>XSS Intigriti Challenge Write-up</td>
+                        <td><a href="https://infosecwriteups.com/xss-intigriti-challenge-dae2dba1cb4c"
+                                target="_blank">infosecwriteups.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>BXSS Hunter</td>
+                        <td><a href="https://bxsshunter.com/" target="_blank">bxsshunter.com</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>SSTI (Server-Side Template Injection)</h2>
+            <p>SSTI vulnerabilities allow attackers to inject malicious templates on the server side, potentially
+                leading to code execution. Below are resources for learning and exploiting SSTI vulnerabilities.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HackTricks: SSTI</td>
+                        <td><a href="https://book.hacktricks.xyz/pentesting-web/ssti-server-side-template-injection"
+                                target="_blank">book.hacktricks.xyz</a></td>
+                    </tr>
+                    <tr>
+                        <td>PayloadsAllTheThings: SSTI</td>
+                        <td><a href="https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Server%20Side%20Template%20Injection/README.md"
+                                target="_blank">github.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Ruby ERB SSTI</td>
+                        <td><a href="https://github.com/harsh-bothra/SecurityExplained/blob/main/resources/ruby-erb-ssti.md"
+                                target="_blank">github.com</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>CSRF (Cross-Site Request Forgery)</h2>
+            <p>CSRF vulnerabilities enable attackers to trick users into performing actions without their knowledge.
+                Below are resources for CSRF exploitation and prevention techniques.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HackTricks: CSRF</td>
+                        <td><a href="https://book.hacktricks.xyz/pentesting-web/csrf-cross-site-request-forgery"
+                                target="_blank">book.hacktricks.xyz</a></td>
+                    </tr>
+                    <tr>
+                        <td>Bolt (CSRF Tool)</td>
+                        <td><a href="https://github.com/s0md3v/Bolt" target="_blank">github.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>XSRFProbe (CSRF Tool)</td>
+                        <td><a href="https://github.com/0xInfection/XSRFProbe" target="_blank">github.com</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>WebSocket</h2>
+            <p>WebSocket vulnerabilities can allow attackers to hijack sessions or intercept communications. Here's a
+                resource for WebSocket security techniques.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>STEWS (WebSocket Security)</td>
+                        <td><a href="https://github.com/PalindromeLabs/STEWS" target="_blank">github.com</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Clickjacking</h2>
+            <p>Clickjacking involves tricking users into clicking something different from what they perceive. The
+                following resource explains how to defend against and exploit clickjacking vulnerabilities.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Clickjacker.io</td>
+                        <td><a href="https://clickjacker.io/" target="_blank">clickjacker.io</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>CORS (Cross-Origin Resource Sharing)</h2>
+            <p>CORS vulnerabilities occur when a web application allows cross-origin requests without proper validation,
+                which can lead to unauthorized data access. Below are some resources to understand and exploit CORS
+                vulnerabilities.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CORS Cheatsheet</td>
+                        <td><a href="https://blockedbycors.dev/cheatsheet/" target="_blank">blockedbycors.dev</a></td>
+                    </tr>
+                    <tr>
+                        <td>GitHub: CORS Cheatsheet</td>
+                        <td><a href="https://github.com/nobradov1c/cors-cheatsheet" target="_blank">github.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>MDN Web Docs: CORS</td>
+                        <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS"
+                                target="_blank">developer.mozilla.org</a></td>
+                    </tr>
+                    <tr>
+                        <td>CORS Test Tool</td>
+                        <td><a href="https://cors-test.codehappy.dev/" target="_blank">cors-test.codehappy.dev</a></td>
+                    </tr>
+                    <tr>
+                        <td>Corsy (CORS Tool)</td>
+                        <td><a href="https://github.com/s0md3v/Corsy" target="_blank">github.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>CORScanner (CORS Scanner)</td>
+                        <td><a href="https://github.com/chenjj/CORScanner" target="_blank">github.com</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Command Injection</h2>
+            <p>Command Injection vulnerabilities occur when user input is improperly passed to system commands. Below is
+                a resource for command injection payloads.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Command Injection Payload List</td>
+                        <td><a href="https://github.com/payloadbox/command-injection-payload-list"
+                                target="_blank">github.com</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>SQL Injection (SQLi)</h2>
+            <p>SQL Injection vulnerabilities allow attackers to manipulate SQL queries, which can lead to data leakage,
+                corruption, or even full system compromise. Below is a resource for SQLi payloads.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SQL Injection Payload List</td>
+                        <td><a href="https://github.com/payloadbox/sql-injection-payload-list"
+                                target="_blank">github.com</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Shellshock</h2>
+            <p>Shellshock is a vulnerability in the Bash shell that allows attackers to execute arbitrary commands via
+                environment variables. Below are resources related to the Shellshock vulnerability.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Shellshock CVE-2014-6271</td>
+                        <td><a href="https://ine.com/blog/shockin-shells-shellshock-cve-2014-6271"
+                                target="_blank">ine.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Inside Shellshock</td>
+                        <td><a href="https://blog.cloudflare.com/inside-shellshock/"
+                                target="_blank">blog.cloudflare.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Log4j Shell POC with User-Agent Payload</td>
+                        <td><a href="https://www.reddit.com/r/HowToHack/comments/tq3bch/log4j_shell_poc_with_useragent_payload/"
+                                target="_blank">reddit.com</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Host Header Injection</h2>
+            <p>Host Header Injection vulnerabilities occur when user-controlled Host headers are improperly processed by
+                a server. Below are resources for understanding and exploiting Host Header vulnerabilities.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Exploring Host Header Vulnerabilities</td>
+                        <td><a href="https://medium.com/@aswinchandran274/exploring-host-header-vulnerabilities-with-headi-bafb5d9ff11e"
+                                target="_blank">medium.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Host Header Injection Vulnerability Scanner</td>
+                        <td><a href="https://github.com/hemantsolo/Host-Header-Injection-Vulnerability-Scanner"
+                                target="_blank">github.com</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Favicon Vulnerability</h2>
+            <p>Favicon files (".ico") can be used for attack vectors, such as malware injection. Below are resources for
+                understanding and exploiting favicon vulnerabilities.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Favicon Malware Blog by Sucuri</td>
+                        <td><a href="https://blog.sucuri.net/2022/09/how-are-favicon-ico-files-used-in-website-malware.html"
+                                target="_blank">sucuri.net</a></td>
+                    </tr>
+                    <tr>
+                        <td>WordPress Favicon Virus</td>
+                        <td><a href="https://www.malcare.com/blog/favicon-ico-virus-wordpress/"
+                                target="_blank">malcare.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Favicon Hashes to Spot Vulnerabilities</td>
+                        <td><a href="https://www.securityhq.com/blog/using-favicon-hashes-to-spot-vulnerabilities/"
+                                target="_blank">securityhq.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Weaponizing Favicon for Bug Bounties</td>
+                        <td><a href="https://medium.com/@Asm0d3us/weaponizing-favicon-ico-for-bugbounties-osint-and-what-not-ace3c214e139"
+                                target="_blank">medium.com</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Cheat Sheet</h2>
+            <p>This cheat sheet contains various information gathering techniques and resources. Below is the link to
+                the cheat sheet for your reference.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Information Gathering Cheat Sheet</td>
+                        <td><a href="https://sly-week-ee5.notion.site/Information-Gathering-11d7e5e0c669411dbd26691fd799e431"
+                                target="_blank">notion.site</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="content" id="youtube-playlist-downloader">
+            <h2>YouTube Playlist + Video Downloader</h2>
+            <p>Below are some resources and tools to download entire YouTube playlists and videos efficiently.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>YouTube Playlist Downloader</td>
+                        <td><a href="https://solyptube.com/youtube-playlist-downloader"
+                                target="_blank">solyptube.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>GitHub: YouTube Playlist Downloader</td>
+                        <td><a href="https://github.com/shaked6540/YoutubePlaylistDownloader?tab=readme-ov-file"
+                                target="_blank">github.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>YouTube Playlist Downloader</td>
+                        <td><a href="https://youtubeplaylist.cc/" target="_blank">youtubeplaylist.cc</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="content" id="reverse-shell-cve">
+            <h2>Reverse Shell + Cheatsheet</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Reverse Shell Cheat Sheet</td>
+                        <td><a href="https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet"
+                                target="_blank">pentestmonkey.net</a></td>
+                    </tr>
+                    <tr>
+                        <td>Payloads Reverse Shell</td>
+                        <td><a href="https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md"
+                                target="_blank">github.com</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Ports Exploits + CVE</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Apache Tomcat Scanner</td>
+                        <td><a href="https://github.com/p0dalirius/ApacheTomcatScanner" target="_blank">github.com</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Public POCs</td>
+                        <td><a href="https://github.com/tintinweb/pub/tree/master/pocs" target="_blank">github.com</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pentesting VOIP</td>
+                        <td><a href="https://book.hacktricks.xyz/network-services-pentesting/pentesting-voip"
+                                target="_blank">hacktricks.xyz</a></td>
+                    </tr>
+                    <tr>
+                        <td>Metasploit Server Capture Modules</td>
+                        <td><a href="https://www.offsec.com/metasploit-unleashed/server-capture-auxiliary-modules/"
+                                target="_blank">offsec.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Metasploit SIP Capture</td>
+                        <td><a href="https://www.infosecmatter.com/metasploit-module-library/?mm=auxiliary/server/capture/sip"
+                                target="_blank">infosecmatter.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Transferring Files from Kali to Windows</td>
+                        <td><a href="https://blog.ropnop.com/transferring-files-from-kali-to-windows/"
+                                target="_blank">ropnop.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Vulhub Exploit Collection</td>
+                        <td><a href="https://github.com/vulhub/vulhub" target="_blank">github.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>CVE-2023-34362</td>
+                        <td><a href="https://github.com/Malwareman007/CVE-2023-34362" target="_blank">github.com</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>MyPython Scripts</td>
+                        <td><a href="https://github.com/fupinglee/MyPython" target="_blank">github.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Exploit Database</td>
+                        <td><a href="https://github.com/blackorbird/exploit-database/tree/master"
+                                target="_blank">github.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>CVE-2020-7247</td>
+                        <td><a href="https://github.com/superzerosec/cve-2020-7247" target="_blank">github.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>CVE-2020-7247 Exploit</td>
+                        <td><a href="https://github.com/QTranspose/CVE-2020-7247-exploit" target="_blank">github.com</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>CVE-2023-25136</td>
+                        <td><a href="https://github.com/nhakobyan685/CVE-2023-25136" target="_blank">github.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>OpenSSH-7.6p1 Exploit</td>
+                        <td><a href="https://github.com/sriramoffcl/OpenSSH-7.6p1-Exploit-py-"
+                                target="_blank">github.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Apache Tomcat RCE CVE-2016-8735</td>
+                        <td><a href="https://medium.com/tenable-techblog/achieving-rce-on-tomcat-via-cve-2016-8735-a-proof-of-concept-13df8a9ef0e0"
+                                target="_blank">medium.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Gel4y Mini Shell Backdoor</td>
+                        <td><a href="https://github.com/22XploiterCrew-Team/Gel4y-Mini-Shell-Backdoor"
+                                target="_blank">github.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Apache Tomcat Pentesting</td>
+                        <td><a href="https://github.com/kh4sh3i/Apache-Tomcat-Pentesting" target="_blank">github.com</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>WordPress Backdoor CVE-2024-6297</td>
+                        <td><a href="https://threatprotect.qualys.com/2024/07/01/wordpress-plugins-injected-backdoor-vulnerability-impacts-multiple-cve-2024-6297/"
+                                target="_blank">qualys.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>CVE-2017-12615</td>
+                        <td><a href="https://github.com/breaktoprotect/CVE-2017-12615" target="_blank">github.com</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>CVE-2019-0232</td>
+                        <td><a href="https://github.com/setrus/CVE-2019-0232" target="_blank">github.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>CVE-2017-12617</td>
+                        <td><a href="https://secalerts.co/vulnerability/CVE-2017-12617" target="_blank">secalerts.co</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ExploitDB - 42966</td>
+                        <td><a href="https://www.exploit-db.com/exploits/42966" target="_blank">exploit-db.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Apache CVE-2020-9484</td>
+                        <td><a href="https://github.com/PenTestical/CVE-2020-9484" target="_blank">github.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>CVE-2023-38408</td>
+                        <td><a href="https://github.com/LucasPDiniz/CVE-2023-38408" target="_blank">github.com</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script>
+        // Tab functionality
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.tab, .content').forEach(el => el.classList.remove('active'));
+                tab.classList.add('active');
+                document.getElementById(tab.getAttribute('data-tab')).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
